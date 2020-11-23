@@ -1,5 +1,10 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from django.http.response import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, django")
+    params = {
+        'title': 'Hello/index',
+        'msg':'これはサンプルページです',
+    }
+    return render(request, 'myapp/index.html', params)
