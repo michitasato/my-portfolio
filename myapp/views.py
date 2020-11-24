@@ -17,3 +17,8 @@ def next(request):
         'goto': 'index',
     }
     return render(request, 'myapp/index.html', params)
+
+def post_list(request):
+    return render(request, 'myapp/post_list.html', {})
+
+
