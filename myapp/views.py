@@ -8,9 +8,17 @@ from .models import Post
 def index(request):
     params = {
         'title': 'Hello/index',
-        'msg':'これはサンプルページです',
+        'msg':'お名前は？',
         'goto': 'next',
     }
+    return render(request, 'myapp/index.html', params)
+
+def form(request):
+    msg = request.POST['msg']
+    params = {
+        'title': 'Hello/Form',
+        'msg': 'こんにちは' + msg + 'さん。',
+        }
     return render(request, 'myapp/index.html', params)
 
 def next(request):
