@@ -9,7 +9,7 @@ from .forms import HelloForm
 
 def index(request):
     params = {
-        'title': 'Hello/index',
+        'title': '残業代チェッカー',
         'message': 'your data',
         'form': HelloForm(),
     }

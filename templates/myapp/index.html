@@ -2,18 +2,25 @@
 <!doctype html>
 <html lang=”ja”>
 <head>
-    <meta charset=”uft-8”>
-    <title>template test</title>
-    <link rel="stylesheet" type="text/css"
-        href="{% static 'myapp/css/style.css' %}" />
+  <meta charset=”uft-8”>
+  <title>残業代チェッカー</title>
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'myapp/css/style.css' %}" />
 </head>
 <body>
-    <h1>{{title}}</h1>
-    <p>{{message|safe}}</p>
-    <form action="{% url 'index' %}" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="click">
-    </form>
+  <heder></heder>
+    <h1>残業代チェッカー</h1>
+
+    <div id="wrap">
+      <div class="content">
+        <p>まずは無料診断！</p>
+        <p>あなたの残業代がすぐにわかる</p>
+        <p>会社に在籍中、または退職後２年以内ですか？</p>
+        <p class="botn">いいえ</p>
+        <p class="botn">はい</p>
+      </div>
+    </div>
+
+  <footer></footer>
 </body>
 </html>
