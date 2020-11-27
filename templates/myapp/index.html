@@ -4,23 +4,28 @@
 <head>
   <meta charset=”uft-8”>
   <title>残業代チェッカー</title>
-  <link rel="stylesheet" type="text/css"
-    href="{% static 'myapp/css/style.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}" />
 </head>
-<body>
-  <heder></heder>
-    <h1>残業代チェッカー</h1>
+<body id="checker">
+  <header>
+    <p>ヘッダー部</p>
+  </header>
 
-    <div id="wrap">
-      <div class="content">
+  <div id="wrap">
+    <div class="content">
+      <div class="main-center">
+        <h1>残業代チェッカー</h1>
         <p>まずは無料診断！</p>
-        <p>あなたの残業代がすぐにわかる</p>
-        <p>会社に在籍中、または退職後２年以内ですか？</p>
-        <p class="botn">いいえ</p>
-        <p class="botn">はい</p>
+        <div class="explanatory-txt">
+        <p>あなたの残業代がすぐにわかる 
+        <br>会社に在籍中、または退職後２年以内ですか？</p>
+        <img src="/media/images/問題を出す人の画像.JPG" width="50%" height="50%" border="0" 
+        class="guide-image">
+      <p class="btn"><a href="portfolio.html">いいえ</a></p>
+      <p class="btn"><a href="portfolio.html">はい</a></p>
       </div>
     </div>
+  </div>
 
-  <footer></footer>
 </body>
 </html>
