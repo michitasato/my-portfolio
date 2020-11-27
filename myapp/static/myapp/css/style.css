@@ -42,13 +42,6 @@ p {
     margin: 10px;
 }
 
-header {
-    width: 960px;
-    height: 30px;
-    margin: 0 auto;
-}
-
-
 .btn a {
     background-color: #009cd3;
     color: #ffffff;
@@ -59,6 +52,7 @@ header {
     line-height: 50px;
     margin-top: 20px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .btn a:hover {
