@@ -2,26 +2,29 @@
 <!doctype html>
 <html lang=”ja”>
 <head>
-  <meta charset=”uft-8”>
-  <title>残業代チェッカー</title>
-  <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}" />
+    <meta charset=”uft-8”>
+    <title>残業代チェッカー</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}" />
 </head>
-<body id="checker">
-  <div id="wrap">
-    <div class="content">
-      <div class="main-center">
-        <h1>残業代チェッカー</h1>
-        <p>まずは無料診断！</p>
-        <div class="explanatory-txt">
-          <p>あなたの残業代がすぐにわかる 
-          <br>会社に在籍中、または退職後２年以内ですか？</p>
-        </div>
-        <img src="{% static "myapp/img/問題を出す人の画像.JPG" %}" width="90px" height="90px" border="0" 
-        class="guide-image">
-      <p class="btn"><a href="portfolio.html">いいえ</a></p>
-      <p class="btn"><a href="portfolio.html">はい</a></p>
-    </div>
-  </div>
+    <body id="checker">
+        <div id="wrap">
+            <div class="content">
 
-</body>
+                <div class="main-center">
+                    <h1>残業代チェッカー</h1>
+                    <p>まずは無料診断！</p>
+                    <img src="{% static "myapp/img/問題を出す人の画像.JPG" %}" border="0" class="guide-image">
+                    <div class="explanatory-txt">
+                        <p>あなたの残業代がすぐにわかる<br>会社に在籍中、または退職後２年以内ですか？</p>
+                    </div>
+                    <div class="btn-box">
+                        <ul>
+                            <li><p class="btn"><a href="portfolio.html">いいえ</a></p></li>
+                            <li><p class="btn"><a href="portfolio.html">はい</a></p></li>
+                        </ul>
+                    </div>
+                </div><!--/.main-center-->
+            </div><!--/.content-->
+        </div><!--/.wrap-->     
+    </body><!--/.checker-->
 </html>

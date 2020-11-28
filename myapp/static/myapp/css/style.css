@@ -4,15 +4,6 @@ p,h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
 }
 
-img {
-    vertical-align: bottom;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
 h1 {
     color: red;
     opacity: 0.2;
@@ -24,7 +15,6 @@ h1 {
 #wrap {
     clear: both;
     background-color: #ffffff;
-    margin-top: 220px;
     padding: 35px 0;
 }
 
@@ -40,9 +30,36 @@ h1 {
 
 p {
     margin: 10px;
+    list-style: none;
 }
 
-.btn a {
+.explanatory-txt {
+    width: 800px;
+    float: left;
+}
+
+.explanatory-txt:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.guide-image {
+    float: left;
+}
+
+.btn-box ul {
+    height: 250px;
+}
+
+.btn-box ul li{
+    list-style: none;
+    float: left;
+}
+
+
+.btn-box .btn a {
     background-color: #009cd3;
     color: #ffffff;
     font-size: 20px;
@@ -55,17 +72,9 @@ p {
     text-decoration: none;
 }
 
-.btn a:hover {
+.btn-box .btn a:hover {
     text-decoration: none;
     background-color: #ffffff;
     color: #009cd3;
 }
 
-#checker .explanatory-txt {
-    width: 540px;
-    float: right;
-}
-
-#checker .guide-image {
-    float: left;
-}
