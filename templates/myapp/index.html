@@ -4,6 +4,7 @@
 <head>
     <meta charset=”uft-8”>
     <title>残業代チェッカー</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}" />
 </head>
     <body id="checker">
@@ -19,14 +20,38 @@
                     </div>
                     <div class="btn-box">
                         <ul>
-                            <li><p class="btn"><a href="portfolio.html">いいえ</a></p></li>
+                            <script type="text/javascript" src="{% static "myapp/js/test.js" %}"></script>
+
+                            <li><p class="js-modal-open"><a href="">いいえ</a></p></li>
                             <li><p class="btn"><a href="portfolio.html">はい</a></p></li>
                         </ul>
                     </div>
                 </div><!--/.main-center-->
             </div><!--/.content-->
-            <script type="text/javascript" src="{% static "myapp/js/test.js" %}"></script>
-            <input type="button" value="OK" onclick="ohayou()">
-        </div><!--/.wrap-->     
+        </div><!--/.wrap-->
+
+        <div class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <h1>残業代請求の時効は2年です。</h1>
+                <p>ご退職後2年以上とのご事情ですので、時効を過ぎており請求するのは難しいと思われます。
+                    <br>今後、残業代の請求をされたい場合には、お早めに請求することをおすすめいたします。</p>
+                <a class="js-modal-close" href="">閉じる</a>
+            </div><!--modal__inner-->
+        </div><!--modal-->
+
+        <script>
+        $(function(){
+            $('.js-modal-open').on('click',function(){
+                $('.js-modal').fadeIn();
+                return false;
+            });
+            $('.js-modal-close').on('click',function(){
+                $('.js-modal').fadeOut();
+                return false;
+            });
+        });
+        </script>
+
     </body><!--/.checker-->
 </html>
