@@ -78,7 +78,7 @@ p {
     color: #009cd3;
 }
 
-.btn-box .btn a {
+.js-yes-modal-open a {
     background-color: #009cd3;
     color: #ffffff;
     font-size: 20px;
@@ -91,7 +91,7 @@ p {
     text-decoration: none;
 }
 
-.btn-box .btn a:hover {
+.js-yes-modal-open .btn a:hover {
     text-decoration: none;
     background-color: #ffffff;
     color: #009cd3;
