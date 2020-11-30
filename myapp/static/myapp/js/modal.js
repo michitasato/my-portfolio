@@ -11,4 +11,10 @@ $(function(){
         return false;
     });
 
+    //はいを選んだ処理
+    $('.fadeIn').on('click',function(){
+        $('.yes-box').fadeIn();
+        return false;
+    });
+
 });

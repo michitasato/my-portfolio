@@ -20,8 +20,8 @@
                     </div>
                     <div class="btn-box">
                         <ul>
-                            <li><p class="js-modal-open"><a href="">いいえ</a></p></li>
-                            <li><p class="js-yes-modal-open"><a href="">はい</a></p></li>
+                            <li><p class="js-modal-open"><a href="" class="no">いいえ</a></p></li>
+                            <li><p class="fadeIn"><a href="" class="yes">はい</a></p></li>
                         </ul>
                     </div>
                 </div><!--/.main-center-->
@@ -29,21 +29,29 @@
         </div><!--/.wrap-->
 <!-------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Q2 -->
-
-
+<div class="yes-box">
+    <div class="yes-box__bg"></div>
+        <div class="yes-box__content">
+            <h2>いつ入社しましたか？</h2>
+        </div>
+</div>
 
 <!-- No Page -->
-        <div class="modal js-modal">
-            <div class="modal__bg js-modal-close"></div>
-            <div class="modal__content">
-                <h1>残業代請求の時効は2年です。</h1>
-                <p>ご退職後2年以上とのご事情ですので、時効を過ぎており請求するのは難しいと思われます。
-                    <br>今後、残業代の請求をされたい場合には、お早めに請求することをおすすめいたします。</p>
-                <a class="js-modal-close" href="">閉じる</a>
+<div class="modal js-modal">
+    <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+            <h1>残業代請求の時効は2年です。</h1>
+            <p>ご退職後2年以上とのご事情ですので、時効を過ぎており請求するのは難しいと思われます。
+            <br>今後、残業代の請求をされたい場合には、お早めに請求することをおすすめいたします。</p>
+            <a class="js-modal-close" href="">閉じる</a>
+        </div><!--modal__content-->
+</div><!--modal js-modal-->
+
+
+
 
 <!-------------------------------------------------------------------------------------------------------------------------------------->
-            </div><!--modal__inner-->
-        </div><!--modal-->
         <script type="text/javascript" src="{% static "myapp/js/modal.js" %}" ></script>
     </body><!--/.checker-->
 </html>
+
