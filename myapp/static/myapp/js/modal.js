@@ -6,6 +6,7 @@ $(function(){
         return false;
     });
 
+    //閉じる
     $('.js-modal-close').on('click',function(){
         $('.js-modal').fadeOut();
         return false;
@@ -13,8 +14,16 @@ $(function(){
 
     //はいを選んだ処理
     $('.fadeIn').on('click',function(){
-        $('.yes-box').fadeIn();
+        $('.yes-modal').fadeIn();
         return false;
     });
+    //閉じる
+    $('.close-btn').on('click',function(){
+        $('.yes-modal').fadeOut();
+        return false;
+    });
+
+
+
 
 });
